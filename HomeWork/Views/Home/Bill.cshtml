@@ -6,22 +6,22 @@
 
 <h2>Bill</h2>
 
-@*<p>
-    @Html.ActionLink("Create New", "Create")
-</p>*@
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ID)
+            @Html.DisplayNameFor(model => model.Id)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TYPE)
+            @Html.DisplayNameFor(model => model.Categoryyy)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DATE)
+            @Html.DisplayNameFor(model => model.Dateee)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AMT)
+            @Html.DisplayNameFor(model => model.Amounttt)
         </th>
         <th></th>
     </tr>
@@ -29,21 +29,21 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ID)
+            @Html.DisplayFor(modelItem => item.Id)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TYPE)
+            @Html.DisplayFor(modelItem => item.Categoryyy)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DATE)
+            @Html.DisplayFor(modelItem => item.Dateee)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AMT)
+            @Html.DisplayFor(modelItem => item.Amounttt)
         </td>
         @*<td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>*@
     </tr>
 }
